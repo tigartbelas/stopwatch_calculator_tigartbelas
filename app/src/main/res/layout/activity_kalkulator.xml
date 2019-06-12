@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/background"
+    tools:context=".Kalkulator">
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="25sp"
+        android:textColor="#FFF"
+        />
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:textSize="25sp"
+        android:textColor="#FFF"
+        />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+        
+        <Button
+            android:id="@+id/btplus"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:onClick="btJumlah"
+            android:textSize="30sp"
+            android:textAllCaps="false"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/background"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/btmin"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="-"
+            android:onClick="KlikKurang"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/background"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/btperkalian"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="x"
+            android:textAllCaps="false"
+            android:onClick="KlikKali"
+            android:textSize="30sp"
+            android:textColor="@color/background"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/btbagi"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text=":"
+            android:textAllCaps="false"
+            android:onClick="KlikBagi"
+            android:layout_marginLeft="5dp"
+            android:textSize="30sp"
+            android:textColor="@color/background"
+            android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hasilnya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:textSize="40sp"
+        android:textColor="@color/colorPrimary"/>
+
+</LinearLayout>
