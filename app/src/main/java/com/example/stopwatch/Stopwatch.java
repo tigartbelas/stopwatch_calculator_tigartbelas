@@ -32,8 +32,6 @@ public class Stopwatch extends AppCompatActivity {
         pause = findViewById(R.id.pause);
         reset = findViewById(R.id.reset);
 
-
-
         //ilang button
         pause.setAlpha(0);
         reset.setAlpha(0);
@@ -54,9 +52,9 @@ public class Stopwatch extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 anchor.startAnimation(animasi);
-                start.animate().alpha(1).translationY(140).setDuration(900).start();
-                pause.animate().alpha(1).setDuration(400).start();
-                reset.animate().alpha(1).setDuration(400).start();
+                start.animate().alpha(1).translationY(140).setDuration(750).start();
+                pause.animate().alpha(1).setDuration(300).start();
+                reset.animate().alpha(1).setDuration(300).start();
                 mchronometer.setBase(SystemClock.elapsedRealtime() + timewhenstopped);
                 mchronometer.start();
             }

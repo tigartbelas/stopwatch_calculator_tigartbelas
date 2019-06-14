@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         btnIn.startAnimation(bthead2);
         btnkalk.startAnimation(bthead2);
 
-
         //run activity Stopwatch
         btnIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //run activity Kalkulator
         btnkalk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
